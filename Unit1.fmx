@@ -1,0 +1,44 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 401
+  ClientWidth = 599
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Popup1: TPopup
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 2.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 38.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'popupboxstyle'
+    TabOrder = 0
+    object bOpenFile: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Open File'
+      TextSettings.Trimming = None
+      OnClick = bOpenFileClick
+    end
+  end
+  object bShowPopup: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 1
+    Text = 'Show Popup'
+    TextSettings.Trimming = None
+    OnClick = bShowPopupClick
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 376
+    Top = 72
+  end
+end
